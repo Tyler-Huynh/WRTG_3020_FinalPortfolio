@@ -1,61 +1,58 @@
 <!DOCTYPE html>
-<html>
-<head>
-	<title>WRTG3020_Portfolio</title>
-	<link rel="stylesheet" type="text/css" href="css/style.css">
+<html lang="en">
+    <head>
+        <title>Portfolio Homepage</title>
 
-	<link rel="preconnect" href="https://fonts.gstatic.com">
-  <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
 
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-
-</head>
-<body>
-	<!----hero Section start---->
-	<div class="hero">
-		<nav>
-			<h2 class="logo">Final<span>Portfolio</span></h2>
-			<ul>
-				<li><a href="/index.html">Home</a></li>
-				<li><a href="/about.html">Reflection 1</a></li>
-				<li><a href="/aboutcopy.html">Reflection 2</a></li>
-				<li><a href="/aboutcopycopy.html">Reflection 3</a></li>
-				<li><a href="/myreflections.html">Reflections of myself</a></li>
-				
-			</ul>
-		</nav>
-
-		<div class="content">
-			<h4>Hello World, I'm</h4>
-			<div class="typewriter">
-			<h1>Tyler <span>Huynh</span></h1>
-		</div>
-			
-		</div>
-	</div>
-
-	<!----About section start---->
-	<section class="about">
-		<div class="main">
-			<img src="/img/tyler.jpg">
-			<div class="about-text">
-				<h2>About Me</h2>
-				<h5>Computer Science Major <span>& Sociology Minor</span></h5>
-				<p>I am a current student at the University of Colorado Boulder. I love to work with technology and just be curious about the world itself! </p>
-			</div>
-		</div>
-	</section>
-
-	<!------footer--------->
-	<footer>
-		<p>Tyler Huynh</p>
-		<p>Click one of the icons below to be transported to my social medias!</p>
-		<div class="social">
-			<a href="https://www.instagram.com/_tylerhuynh_/"><i class="fab fa-instagram"></i></a>
-			<a href="https://www.linkedin.com/in/tylerhuynh1121/"><i class="fab fa-linkedin"></i></a>
-
-		</div>
-		<p class="end">Built with ❤️ by Tyler Huynh</p>
-	</footer>
-</body>
+    
+        <link href="/css/welcome.css" rel="stylesheet">
+        
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
+    </head>
+    <body>
+        
+    <div id="container">
+        <span id="text1"></span>
+        <span id="text2"></span>
+    </div>
+    
+    <svg id="filters">
+        <defs>
+            <filter id="threshold">
+                <feColorMatrix in="SourceGraphic" type="matrix" values="1 0 0 0 0
+                      0 1 0 0 0
+                      0 0 1 0 0
+                      0 0 0 255 -140" />
+            </filter>
+        </defs>
+    </svg>
+   
+    <script src="/js/welcome.js" type="text/javascript"></script>
+    <div class="form">
+        <button><a href="/index.html" style="color: white;">Embark</a></button>
+        <br>
+    </div>
+    <!--<body class="center text-center">
+        <div class="container">
+            <div class="form-signin">
+                <div class="text-box">
+                    <span>R</span>
+                    <span>E</span>
+                    <span>A</span>
+                    <span>L</span>
+                    <span>I</span>
+                    <span>T</span>
+                    <span>Y</span>
+                </div>
+            <br>
+                <div class="form">
+                    <button><a href="/index.html" style="color: white;">Embark</a></button>
+                    <br>
+                </div>
+            </div>
+        </div> -->
+    </body>
 </html>
